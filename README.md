@@ -55,7 +55,7 @@ for now I am using local image.
 Create a kubernetes secret with our github details 
 
 ```bash
- kubectl -n github create secret generic github-secret \
+ kubectl create secret generic github-secret \
    --from-literal OWNER=<> \
    --from-literal GREPOSITORY=<> \
    --from-literal GITHUB_TOKEN="<>" 
