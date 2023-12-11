@@ -51,9 +51,6 @@ docker run -v /var/run/docker.sock:/var/run/docker.sock -d -p 80:80 -it -e GITHU
 
 Load our github runner image so we need to push it to ECR/GCR or Docker Hub(anywhere you want for):
 for now I am using local image.
-```bash
-kind load docker-image github-runner:latest --name githubactions
-```
 
 Create a kubernetes secret with our github details 
 
