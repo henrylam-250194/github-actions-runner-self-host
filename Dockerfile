@@ -97,8 +97,8 @@ RUN curl -o actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz -L \
 # The hash in the following line should match the one provided by GitHub in your screenshot.
 # Ensure that the SHA256 hash matches the one for your downloaded version.
 # RUN echo " actions-runner-linux-arm64-${RUNNER_VERSION}.tar.gz" | shasum -a 256 -c\
-RUN sudo chmod u+x /actions-runner/token.sh && ./token.sh
+RUN sudo chmod u+x /actions-runner/token.sh
 # Expose necessary ports (if any)
 # For example, if you need to expose port 8080 for a web application, uncomment the next line.
 # EXPOSE 80
-ENTRYPOINT ["./run.sh"]
+ENTRYPOINT ["./token.sh"]
