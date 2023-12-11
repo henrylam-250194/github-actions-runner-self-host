@@ -1,8 +1,8 @@
 <h1 align="center">Running the Runner in Docker</h1>
 <div align="center">
-<a href="https://github.com/snap-one/gh-actions-self-runner/pulls"><img src="https://img.shields.io/github/issues-pr/snap-one/gh-actions-self-runner" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/snap-one/gh-actions-self-runner/issues"><img src="https://img.shields.io/github/issues/snap-one/gh-actions-self-runner" alt="Issues Badge"/></a>
-<a href="https://github.com/snap-one/gh-actions-self-runner/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/snap-one/gh-actions-self-runner?color=2b9348"></a>
+<a href="https://github.com/henrylam-250194/github-actions-runner-self-host/pulls"><img src="https://img.shields.io/github/issues-pr/henrylam-250194/github-actions-runner-self-host" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/henrylam-250194/github-actions-runner-self-host/issues"><img src="https://img.shields.io/github/issues/henrylam-250194/github-actions-runner-self-host" alt="Issues Badge"/></a>
+<a href="https://github.com/henrylam-250194/github-actions-runner-self-host/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/henrylam-250194/github-actions-runner-self-host?color=2b9348"></a>
 </div>
 
 ## Content
