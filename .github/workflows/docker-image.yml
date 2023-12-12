@@ -23,6 +23,6 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t snapone-runner:${{ github.sha }} -f Dockerfile .
-          docker tag snapone-runner:${{ github.sha }} ${{ secrets.AWS_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com:snapone-runner:${{ github.sha }}
-          docker push ${{ secrets.AWS_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com:snapone-runner:${{ github.sha }}
+          docker build -t ${{ env.image_name }}:${{ github.sha }} -f Dockerfile .
+          docker tag snapone-runner:${{ github.sha }} ${{ secrets.AWS_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com:${{ env.image_name }}:${{ github.sha }}
+          docker push ${{ secrets.AWS_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com:${{ env.image_name }}:${{ github.sha }}
