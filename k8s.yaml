@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: github-runner
-        imagePullPolicy: Never #use local kind image #need to be change with snapone.
+        imagePullPolicy: Never #use local kind image
         image: github-runner:latest #use the image from ECR .v.v
         env:
         - name: GITHUB_OWNER
