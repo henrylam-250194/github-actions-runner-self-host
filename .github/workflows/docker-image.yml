@@ -16,8 +16,10 @@ jobs:
       - name: Docker login
         run: sudo docker login -u hunglam2501 -p Hasd@2020
 
-      - name: Docker login
-        run: sudo docker push hunglam2501:${{ github.sha }}
+      - name: Tags
+        run: docker tag hunglam2501:${{ github.sha }} hunglam2501/gh-image
+      - name: push
+        run: docker push hunglam2501/gh-image
       # - name: Configure AWS Credentials
       #   uses: aws-actions/configure-aws-credentials@v2
       #   with:
