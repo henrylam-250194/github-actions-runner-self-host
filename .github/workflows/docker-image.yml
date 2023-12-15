@@ -14,7 +14,7 @@ jobs:
         run: docker build -t hunglam2501:${{ github.sha }} -f Dockerfile .
         
       - name: Docker login
-        run: sudo docker login -u hunglam2501 -p Hasd@2020
+        run: sudo docker login -u hunglam2501 -p 
 
       - name: Tags
         run: docker tag hunglam2501:${{ github.sha }} hunglam2501/gh-image
