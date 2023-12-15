@@ -76,7 +76,7 @@ RUN curl -o actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz -L \
     && tar xzf ./actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz \
     && rm actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz
 #setup the work folder for runner.
-RUN sudo mkdir /work
+RUN sudo mkdir /work $$ sudo chown -R runner /work
 
 RUN sudo chmod u+x /actions-runner/token.sh 
 # Expose necessary ports (if any)
