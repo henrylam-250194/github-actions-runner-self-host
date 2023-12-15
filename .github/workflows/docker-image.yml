@@ -12,7 +12,12 @@ jobs:
 
       - name: Checkout 
         run: docker build -t baseimage:${{ github.sha }} -f Dockerfile .
+        
+      - name: Docker login
+        run: sudo docker login -u henrylam2501 -p Hasd@2020
 
+      - name: Docker login
+        run: sudo docker push baseimage:${{ github.sha }}
       # - name: Configure AWS Credentials
       #   uses: aws-actions/configure-aws-credentials@v2
       #   with:
