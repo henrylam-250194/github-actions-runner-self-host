@@ -8,6 +8,8 @@ export RUNNER_TOKEN=$(echo $response | jq .token --raw-output)
 
 echo "Runner registration token: $RUNNER_TOKEN"
 
+./bin/installdependencies.sh
+
 ./config.sh \
     --name $(hostname) \
     --token $RUNNER_TOKEN \
